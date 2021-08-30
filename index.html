@@ -80,7 +80,11 @@
 	<script>
 		var _HTMLPage = ['step1','step2','step3','step4','step5'];
 		_HTMLPage.forEach((e)=>{
-			var Page = window.location.href.replace(window.location.href.split("/").pop(), "_page/"+ e + ".html");
+			/*
+			  NOT WORKING ON GITHUB PAGES
+			  var Page = window.location.href.replace(window.location.href.split("/").pop(), "_page/"+ e + ".html");
+			*/
+			var Page = window.location.href +"_page/"+ e + ".html";
 			console.log("Calling: "+ Page);
 			var xhttp = new XMLHttpRequest();
 			xhttp.onreadystatechange = function(){
