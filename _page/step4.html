@@ -1,0 +1,119 @@
+<div class="emoji">
+	<img src="./img/handshake.png" style="height: 32px">
+</div>
+<p class="stepCountShortScreen">Step 4 Of 5</p>
+<h1>3rd Party Services</h1>
+<p>Choose 3rd party services that you are using in your app. Do check the <a href="#" target="_blank">guidelines of Google Play Store</a> to know more about the use case of 3rd party services in your app.</p>
+<div class="formContainer">
+	<div class="checkboxContainer">
+	  <label class="containerCheckbox">
+	  	  <div>
+		  <img src="../img/3rd_party_services/airtable.png">
+		  <div>Airtable&nbsp;Database</div>
+		  </div>
+		  <input type="checkbox" onchange="selectTPS('Airtable Database')">
+		  <span class="checkmark"></span>
+	  </label>
+	  <label class="containerCheckbox">
+	  	  <div>
+		  <img src="../img/3rd_party_services/cloudinary.png">
+		  <div>Cloudnary&nbsp;Media&nbsp;Database</div>
+		  </div>
+		  <input type="checkbox" onchange="selectTPS('Cloudnary Media Database')">
+		  <span class="checkmark"></span>
+	  </label>
+	  <label class="containerCheckbox">
+	  	  <div>
+		  <img src="../img/3rd_party_services/firebaseAnalytics.png">
+		  <div>Firebase&nbsp;Analytics</div>
+		  </div>
+		  <input type="checkbox" onchange="selectTPS('Firebase Analytics')">
+		  <span class="checkmark"></span>
+	  </label>
+	  <label class="containerCheckbox">
+	  	  <div>
+		  <img src="../img/3rd_party_services/firestore.png">
+		  <div>FireStore&nbsp;Database</div>
+		  </div>
+		  <input type="checkbox" onchange="selectTPS('FireStore Database')">
+		  <span class="checkmark"></span>
+	  </label>
+	  <label class="containerCheckbox">
+	  	  <div>
+		  <img src="../img/3rd_party_services/firestore.png">
+		  <div>Google&nbsp;Drive</div>
+		  </div>
+		  <input type="checkbox" onchange="selectTPS('Google Drive')">
+		  <span class="checkmark"></span>
+	  </label>
+	  <label class="containerCheckbox">
+	  	  <div>
+		  <img src="../img/3rd_party_services/firestore.png">
+		  <div>Google&nbsp;Play&nbsp;Services</div>
+		  </div>
+		  <input type="checkbox" onchange="selectTPS('Google Play Services')">
+		  <span class="checkmark"></span>
+	  </label>
+	  <label class="containerCheckbox">
+	  	  <div>
+		  <img src="../img/3rd_party_services/gPlayApp.png">
+		  <div>Google&nbsp;Play&nbsp;Services</div>
+		  </div>
+		  <input type="checkbox" onchange="selectTPS('Google Play Services')">
+		  <span class="checkmark"></span>
+	  </label>
+	  <label class="containerCheckbox">
+	  	  <div>
+		  <img src="../img/3rd_party_services/lottieAnimation.png">
+		  <div>Lottie&nbsp;Animation</div>
+		  </div>
+		  <input type="checkbox" onchange="selectTPS('Lottie Animation')">
+		  <span class="checkmark"></span>
+	  </label>
+	  <label class="containerCheckbox">
+	  	  <div>
+		  <img src="../img/3rd_party_services/OneSignalPush.png">
+		  <div>One&nbsp;Signal&nbsp;Push&nbsp;Notification</div>
+		  </div>
+		  <input type="checkbox" onchange="selectTPS('One Signal Push Notification')">
+		  <span class="checkmark"></span>
+	  </label>
+	  <label class="containerCheckbox">
+	  	  <div>
+		  <img src="../img/3rd_party_services/recaptcha.png">
+		  <div>Google&nbsp;Recaptcha</div>
+		  </div>
+		  <input type="checkbox" onchange="selectTPS('Google Recaptcha')">
+		  <span class="checkmark"></span>
+	  </label>
+	  <label class="containerCheckbox">
+	  	  <div>
+		  <img src="../img/3rd_party_services/Spreadsheet.png">
+		  <div>Google&nbsp;Spreasheet</div>
+		  </div>
+		  <input type="checkbox" onchange="selectTPS('Google Spreadsheet')">
+		  <span class="checkmark"></span>
+	  </label>
+	  <label class="containerCheckbox">
+	  	  <div>
+		  <img src="../img/3rd_party_services/yandex_new.png">
+		  <div>Yandex&nbsp;API</div>
+		  </div>
+		  <input type="checkbox" onchange="selectTPS('Yandex API')">
+		  <span class="checkmark"></span>
+	  </label>
+	</div>
+	<!--Buttons-->
+	<div class="buttonsContainer">
+		<button id="back" onclick="
+		document.getElementById('step4').style.display='none';
+		document.getElementById('step3').style.display='block';
+		setCurrentStep(3);
+		">Back</button>
+		<button id="next" onclick="
+		document.getElementById('step4').style.display='none';
+		document.getElementById('step5').style.display='block';
+		setCurrentStep(5);
+		">Next Step</button>
+	</div>
+</div>

@@ -1,0 +1,127 @@
+<div class="emoji">
+	<img src="../img/crossfingure.png" style="height: 32px">
+</div>
+<p class="stepCountShortScreen">Step 3 Of 5</p>
+<h1>Ads Information</h1>
+<p>Choose the Ads services that you are using in your app. Do check the <a href="#" target="_blank">guidelines of Google Play Store</a> to know more about the use case of ads in app.</p>
+<div class="formContainer">
+	<div class="checkboxContainer">
+	  <label class="containerCheckbox">
+	  	  <div>
+		  <img src="./img/3rd_party_ads/admob.png">
+		  <div>Google&nbsp;Admob&nbsp;Ads</div>
+		  </div>
+		  <input type="checkbox" onchange="selectAds('Google Admob Ads')">
+		  <span class="checkmark"></span>
+	  </label>
+	  <label class="containerCheckbox">
+	  	  <div>
+		  <img src="./img/3rd_party_ads/adManager.png">
+		  <div>Google&nbsp;Ads&nbsp;Manager</div>
+		  </div>
+		  <input type="checkbox" onchange="selectAds('Google Ads Manager')">
+		  <span class="checkmark"></span>
+	  </label>
+	  <label class="containerCheckbox">
+	  	  <div>
+		  <img src="./img/3rd_party_ads/adcolony.png">
+		  <div>Adcolony&nbsp;Ads</div>
+		  </div>
+		  <input type="checkbox" onchange="selectAds('Adcolony Ads')">
+		  <span class="checkmark"></span>
+	  </label>
+	  <label class="containerCheckbox">
+	  	  <div>
+		  <img src="./img/3rd_party_ads/appLovin.png">
+		  <div>Applovin&nbsp;Ads</div>
+		  </div>
+		  <input type="checkbox" onchange="selectAds('Applovin Ads')">
+		  <span class="checkmark"></span>
+	  </label>
+	  <label class="containerCheckbox">
+	  	  <div>
+		  <img src="./img/3rd_party_ads/appnext.png">
+		  <div>Appnext&nbsp;Ads</div>
+		  </div>
+		  <input type="checkbox" onchange="selectAds('Appnext Ads')">
+		  <span class="checkmark"></span>
+	  </label>
+	  <label class="containerCheckbox">
+	  	  <div>
+		  <img src="./img/3rd_party_ads/chartboost.png">
+		  <div>Chartboost&nbsp;Ads</div>
+		  </div>
+		  <input type="checkbox" onchange="selectAds('Chartboost Ads')">
+		  <span class="checkmark"></span>
+	  </label>
+	  <label class="containerCheckbox">
+	  	  <div>
+		  <img src="./img/3rd_party_ads/facebook.png">
+		  <div>Facebook&nbsp;Ads</div>
+		  </div>
+		  <input type="checkbox" onchange="selectAds('Facebook Ads')">
+		  <span class="checkmark"></span>
+	  </label>
+	  <label class="containerCheckbox">
+	  	  <div>
+		  <img src="./img/3rd_party_ads/mintegral.png">
+		  <div>Mintegral&nbsp;Ads</div>
+		  </div>
+		  <input type="checkbox" onchange="selectAds('Mintegral Ads')">
+		  <span class="checkmark"></span>
+	  </label>
+	  <label class="containerCheckbox">
+	  	  <div>
+		  <img src="./img/3rd_party_ads/mobPub.png">
+		  <div>Mopub&nbsp;Ads</div>
+		  </div>
+		  <input type="checkbox" onchange="selectAds('Mopub Ads')">
+		  <span class="checkmark"></span>
+	  </label>
+	  <label class="containerCheckbox">
+	  	  <div>
+		  <img src="./img/3rd_party_ads/Pollfish.png">
+		  <div>Pollfish&nbsp;Ads</div>
+		  </div>
+		  <input type="checkbox" onchange="selectAds('Pollfish Ads')">
+		  <span class="checkmark"></span>
+	  </label>
+	  <label class="containerCheckbox">
+	  	  <div>
+		  <img src="./img/3rd_party_ads/startAppCore.png">
+		  <div>StartApp&nbsp;Ads</div>
+		  </div>
+		  <input type="checkbox" onchange="selectAds('StartApp Ads')">
+		  <span class="checkmark"></span>
+	  </label>
+	  <label class="containerCheckbox">
+	  	  <div>
+		  <img src="./img/3rd_party_ads/Tapjoy.png">
+		  <div>Tapjoy&nbsp;Ads</div>
+		  </div>
+		  <input type="checkbox" onchange="selectAds('Tapjoy Ads')">
+		  <span class="checkmark"></span>
+	  </label>
+	  <label class="containerCheckbox">
+	  	  <div>
+		  <img src="./img/3rd_party_ads/unityBannerAd.png">
+		  <div>Unity&nbsp;Ads</div>
+		  </div>
+		  <input type="checkbox" onchange="selectAds('Unity Ads')">
+		  <span class="checkmark"></span>
+	  </label>
+	</div>
+	<!--Buttons-->
+	<div class="buttonsContainer">
+		<button id="back" onclick="
+		document.getElementById('step3').style.display='none';
+		document.getElementById('step2').style.display='block';
+		setCurrentStep(2);
+		">Back</button>
+		<button id="next" onclick="
+		document.getElementById('step3').style.display='none';
+		document.getElementById('step4').style.display='block';
+		setCurrentStep(4);
+		">Next Step</button>
+	</div>
+</div>

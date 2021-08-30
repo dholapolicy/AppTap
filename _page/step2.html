@@ -1,0 +1,53 @@
+<div class="emoji">
+	<img src="img/2Fingure.png" style="height: 32px">
+</div>
+<p class="stepCountShortScreen">Step 2 Of 5</p>
+<h1>Developer Information</h1>
+<p>You need to provide few information. Kindly enter the information correctly.</p>
+<div class="formContainer">
+	<div class="twoColumns">
+		<div class="column1">
+			<p>Developer Name</p>
+			<input type="text" id="DeveloperName" value="">
+		</div>
+		<div class="column2">
+			<p>Contact Email</p>
+			<input type="text" id="DeveloperContactEmail" value="">
+		</div>
+	</div>
+	<div class="twoColumns">
+		<div class="column1">
+			<p>Phone Number</p>
+			<input type="number" id="DeveloperPhoneNumber" value="">
+		</div>
+		<div class="column2">
+			<p>Country</p>
+			<input type="text" id="DeveloperCountry" value="" list="countryList">
+			<datalist id="countryList">
+				<option value="India">India</option>
+				<option value="Pakistan">Pakistan</option>
+				<option value="Bangladesh">Bangladesh</option>
+				<option value="Nepal">Nepal</option>
+				<option value="China">China</option>
+				<option value="Shrilanka">Shrilanka</option>
+				<option value="USA">USA</option>
+			</datalist>
+		</div>
+	</div>
+	<div class="column1">
+		<p>Website/Twitter/GitHub Link</p>
+		<input type="text" id="DeveloperWebsiteLink" value="">
+	</div>
+	<div class="buttonsContainer">
+		<button id="back" onclick="
+		document.getElementById('step2').style.display='none';
+		document.getElementById('step1').style.display='block';
+		setCurrentStep(1);
+		">Back</button>
+		<button id="next" onclick="
+		document.getElementById('step2').style.display='none';
+		document.getElementById('step3').style.display='block';
+		setCurrentStep(3);
+		">Next Step</button>
+	</div>
+</div>
