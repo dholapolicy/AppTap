@@ -31,7 +31,7 @@ h1{
 }
 
 .leftPanel{
-	height: 100vh;
+	height: 100%;
 	background: #304766;
 	color: #f5f7fa;
 	padding-left: 35px;
