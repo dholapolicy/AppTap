@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>AppTAP - A Simple Privacy Policy &amp; Terms Of Use Generator For Your Apps</title>
+	<!--CSS-External-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+	<!--CSS-Local-->
+	<link type="text/css" rel="stylesheet" href="stylesheet/main.css">
+</head>
+<body>
+	<div class="container">
+		<div class="leftPanel">
+			<h1 class="siteTitle">AppTAP</h1>
+			<div class="StepsCotainer">
+				<h1>Step1</h1>
+				<p>Enter the basic information of the Apk</p>
+			</div>
+			<!--Step1-->
+			<div class="StepsList">
+				<div class="stepNumber active">
+					<p>1</p>
+				</div>
+				<div class="stepDesc">
+					<p>App Information</p>
+				</div>
+			</div>
+			<div class="stepSpace"></div>
+			<!--Step2-->
+			<div class="StepsList">
+				<div class="stepNumber">
+					<p>2</p>
+				</div>
+				<div class="stepDesc">
+					<p>Developer Information</p>
+				</div>
+			</div>
+			<div class="stepSpace"></div>
+			<!--Step3-->
+			<div class="StepsList">
+				<div class="stepNumber">
+					<p>3</p>
+				</div>
+				<div class="stepDesc">
+					<p>Ads Information</p>
+				</div>
+			</div>
+			<div class="stepSpace"></div>
+			<!--Step4-->
+			<div class="StepsList">
+				<div class="stepNumber">
+					<p>4</p>
+				</div>
+				<div class="stepDesc">
+					<p>3rd Party Services</p>
+				</div>
+			</div>
+			<div class="stepSpace"></div>
+			<!--Step4-->
+			<div class="StepsList">
+				<div class="stepNumber">
+					<p>5</p>
+				</div>
+				<div class="stepDesc">
+					<p>Generate TAP</p>
+				</div>
+			</div>
+		</div>
+		<!--FROM-->
+		<div class="rightPanel">
+			<div id="step1"></div>
+			<div id="step2"></div>
+			<div id="step3"></div>
+			<div id="step4"></div>
+			<div id="step5"></div>
+		</div>
+	</div>
+	<script>
+		var _HTMLPage = ['step1','step2','step3','step4','step5'];
+		_HTMLPage.forEach((e)=>{
+			var Page = window.location.href.replace('index.html',"_page/"+ e + ".html");
+			var xhttp = new XMLHttpRequest();
+			xhttp.onreadystatechange = function(){
+				if(this.readyState == 4){
+					if(this.status == 200){
+						document.getElementById(e).innerHTML= this.responseText;
+						console.log("Included Page: /_page/" + e + ".html");
+					}
+				}
+			}
+			
+			xhttp.open("GET", Page, true);
+		  	xhttp.send();
+		});
+		
+		var LastStep = 0;
+		function setCurrentStep(e){
+			var step = document.getElementsByClassName("stepNumber")[LastStep];
+			step.classList.remove("active");
+			
+			/*New Step*/
+			LastStep = e-1;
+			var step = document.getElementsByClassName("stepNumber")[LastStep];
+			step.classList.add("active");
+		}
+		
+		var AdsUsed = [];
+		function selectAds(e){
+			if(AdsUsed.includes(e)){
+				var int = AdsUsed.indexOf(e);
+				if(int > -1){
+					AdsUsed.splice(int,1);
+				}
+				return;
+			}
+			
+			AdsUsed.push(e);
+		}
+		
+		var ThirdPartyServices = [];
+		function selectTPS(e){
+			if(ThirdPartyServices.includes(e)){
+				var int = ThirdPartyServices.indexOf(e);
+				if(int > -1){
+					ThirdPartyServices.splice(int,1);
+				}
+				
+				console.log(ThirdPartyServices);
+				return;
+			}
+			
+			ThirdPartyServices.push(e);
+			console.log(ThirdPartyServices);
+		}
+	</script>
+</body>
+</html>
