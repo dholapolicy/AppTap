@@ -12,6 +12,13 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+#disclamer,
+#step2,
+#step3,
+#step4,
+#step5{
+	display: none;
+}
 
 h1{
 	font-size: 30px;
@@ -131,6 +138,13 @@ h1{
 	margin-top: 45px;
 }
 
+.discalmerContainer{
+	height: 65vh;
+	overflow-y: auto;
+	overflow-x: hidden;
+	margin-top: 15px;
+}
+
 .formContainer p{
 	font-weight: 400;
 	margin: 0px 0px 10px 0px;
@@ -194,13 +208,6 @@ h1{
 	color: #fff;
 }
 
-
-#step2,
-#step3,
-#step4,
-#step1{
-	display: none;
-}
 
 .checkboxContainer{
 	width: 100%;
