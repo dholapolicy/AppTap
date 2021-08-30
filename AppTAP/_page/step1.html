@@ -1,0 +1,80 @@
+
+<div class="emoji">
+	<img src="img/FingureTop.png" style="height: 21px; transform: rotate(-90deg);">
+</div>
+<p class="stepCountShortScreen">Step 1 Of 5</p>
+<h1>App Information</h1>
+<p>You need to provide few information. Kindly enter the information correctly.</p>
+<div class="formContainer">
+	<div class="twoColumns">
+		<div class="column1">
+			<p>App Title</p>
+			<input type="text" id="AppTitle" value="">
+		</div>
+		<div class="column2">
+			<p>Device OS</p>
+			<input type="text" id="DeviceOS" value="" list="deviceOSType">
+			<datalist id="deviceOSType">
+				<option value="Android">Android</option>
+				<option value="iOS">iOS</option>
+				<option value="KaiOS">KaiOS</option>
+				<option value="Android & iOS">Android &amp; iOS</option>
+				<option value="Android iOS &amp; KaiOS">Android, iOS &amp; KaiOS</option>
+			</datalist>
+		</div>
+	</div>
+	<div class="twoColumns">
+		<div class="column1">
+			<p>Package Name</p>
+			<input type="text" id="PackageName" value="">
+		</div>
+		<div class="column2">
+			<p>App Type</p>
+			<input type="text" id="AppType" value="" list="appType">
+			<datalist id="appType">
+				<option value="Free">Free</option>
+				<option value="Open Source">Open Source</option>
+				<option value="Freemium">Freemium</option>
+				<option value="Ads Supported">Ads Supported</option>
+				<option value="Commercial">Commercial</option>
+			</datalist>
+		</div>
+	</div>
+	<div class="twoColumns">
+		<div class="column1">
+			<p>Policy Effective Date</p>
+			<input type="date" id="PolicyEffectiveDate" value="">
+		</div>
+		<div class="column2">
+			<p>App Owner</p>
+			<input type="text" id="AppOwner" value="" list="ownerType" onkeyup="if(this.value == 'Company'){ document.getElementById('companyInfo').style.display='block';}else{document.getElementById('companyInfo').style.display='none';} ">
+			<datalist id="ownerType">
+				<option value="Individual">Individual</option>
+				<option value="Company">Company</option>
+			</datalist>
+		</div>
+	</div>
+	<div id="companyInfo">
+		<div class="twoColumns">
+			<div class="column1">
+				<p>Company Name</p>
+				<input type="text" id="CompanyName" value="">
+			</div>
+			<div class="column2">
+				<p>Company Email/Phone</p>
+				<input type="text" id="CompanyEmail" value="">
+			</div>
+		</div>
+		<div class="column1">
+			<p>Company Website Link</p>
+			<input type="text" id="CompanyWebsiteLink" value="">
+		</div>
+	</div>
+	<div class="buttonsContainer">
+		<button id="next" onclick="
+		document.getElementById('step1').style.display='none';
+		document.getElementById('step2').style.display='block';
+		setCurrentStep(2);
+		">Next Step</button>
+	</div>
+</div>
