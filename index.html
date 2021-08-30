@@ -75,17 +75,15 @@
 			<div id="step3"></div>
 			<div id="step4"></div>
 			<div id="step5"></div>
+			<div id="disclaimer"></div>
 		</div>
 	</div>
 	<script>
-		var _HTMLPage = ['step1','step2','step3','step4','step5'];
+		var _HTMLPage = ['step1','step2','step3','step4','step5','disclaimer'];
 		_HTMLPage.forEach((e)=>{
-			/*
-			  NOT WORKING ON GITHUB PAGES
-			  var Page = window.location.href.replace(window.location.href.split("/").pop(), "_page/"+ e + ".html");
-			*/
-			var Page = window.location.href +"_page/"+ e + ".html";
+			var Page = window.location.href.replace('index.html','') + "_page/"+ e + ".html";
 			console.log("Calling: "+ Page);
+
 			var xhttp = new XMLHttpRequest();
 			xhttp.onreadystatechange = function(){
 				if(this.readyState == 4){
@@ -141,6 +139,9 @@
 		}
 		
 		/*Start Composing*/
+		function DownloadIt(){
+			alert("Thanks for testing!");
+		}
 		
 	</script>
 </body>
