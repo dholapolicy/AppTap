@@ -3,4 +3,6 @@
 
 AppTAP is Privacy Policy &amp; Terms Of Service Generator for any APK made from Ai2 &amp; it's Distributions
 <br>
-Demo Webiste Link: https://cttricks.com/apptap/
+<hr>
+**Demo Webiste**
+https://cttricks.com/apptap/
