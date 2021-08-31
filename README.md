@@ -6,3 +6,5 @@ AppTAP is Privacy Policy &amp; Terms Of Service Generator for any APK made from 
 <hr>
 <bold>Demo Webiste</bold><br>
 https://cttricks.com/apptap/
+<hr>
+<b>Website testing is going on so, the functions may not work</b>
