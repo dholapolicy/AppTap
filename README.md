@@ -1,4 +1,4 @@
 # AppTap
-Privacy Policy &amp; Terms Of Service Generator For Any Apk Made From Ai2 &amp; It's Distributions
+AppTAP is Privacy Policy &amp; Terms Of Service Generator for any APK made from Ai2 &amp: it's Distributions
 <br>
 Demo Webiste Link: https://cttricks.com/apptap/
