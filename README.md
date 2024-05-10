@@ -7,4 +7,4 @@ Your go-to Privacy Policy & Terms of Service Generator for APKs created with App
 <bold>Demo Webiste</bold><br>
 https://cttricks.com/apptap/
 <hr>
-<b>Website testing is going on so, the functions may not work</b>
+<b>⚠️ Website testing is going on so, the functions may not work</b>
