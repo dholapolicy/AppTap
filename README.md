@@ -1,5 +1,6 @@
 # AppTAP
-![image](https://user-images.githubusercontent.com/76860203/131457992-862b62b9-b8da-4c85-8178-69e6e96fc0b8.png)
+![image](https://github.com/cttricks/AppTap/assets/76860203/f642bd6b-1eb2-4a34-9cfc-03c6598d18e0)
+
 
 AppTAP is Privacy Policy &amp; Terms Of Service Generator for any APK made from Ai2 &amp; it's Distributions
 <br>
