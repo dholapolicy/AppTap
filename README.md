@@ -1,4 +1,3 @@
-# AppTAP
 ![image](https://github.com/cttricks/AppTap/assets/76860203/f642bd6b-1eb2-4a34-9cfc-03c6598d18e0)
 
 
